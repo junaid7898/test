@@ -1,0 +1,161 @@
+.homepage {
+  background-color: #ff9f1c;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+.homepage__header {
+  min-height: 80rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 76%);
+  background-color: #fff;
+  position: relative;
+}
+
+.homepage__title {
+  width: 60rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 3.3rem;
+  text-transform: capitalize;
+
+  position: absolute;
+  top: 20%;
+  left: 12%;
+}
+
+.homepage__title span {
+  color: #ff9f1c;
+}
+
+.homepage__btn {
+  background-color: transparent;
+  color: #ff9f1c;
+  border: 3px solid currentColor;
+  padding: 1.4rem 3.3rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.home__page-footer {
+  clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
+
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url('../../../src/assests/footer.png');
+  background-size: cover;
+  min-height: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__page-footer p {
+  max-width: 50rem;
+
+  font-size: 2.1rem;
+  font-weight: 500;
+
+  color: #fff;
+}
+
+.footer__content {
+  margin-left: 7rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-btn {
+  border: 3px solid #ff9f1c;
+  color: #ff9f1c;
+  padding: 1.2rem 3rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.homepage__mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+
+  transform: rotate(6.8deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .homepage__header {
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    color: #fff;
+  }
+
+  .homepage__btn {
+    color: #fff;
+    background-color: #ff9f1c;
+
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage__title {
+    top: 25%;
+    left: 5%;
+    width: 50rem;
+    align-items: center;
+  }
+
+  .home__page-footer p {
+    max-width: 40rem;
+
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    color: #fff;
+  }
+
+  .footer__content {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
+  .homepage__title {
+    align-items: flex-start;
+    font-size: 2.3rem;
+
+    position: absolute;
+    top: 40%;
+    left: 8%;
+  }
+}
